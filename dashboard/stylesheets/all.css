@@ -236,7 +236,7 @@ a#forum img {
 .hero {
     background: #efeee5;
     padding: 1em 0;
-    margin-bottom: 2em;
+    margin-bottom: 0.3em;
     /* download bar */
 }
 
@@ -406,7 +406,7 @@ a#forum img {
 /* line 277, /home/bitnami/projects/apachefriends-web/source-xampp-windows/stylesheets/all.scss */
 
 body.index .hero {
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 
@@ -416,7 +416,7 @@ body.index .hero h1 {
     text-align: center;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 

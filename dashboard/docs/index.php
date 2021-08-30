@@ -48,7 +48,7 @@ function carregaPagina()
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
                 <li class="name">
-                    <h1><a href="../">Home</a></h1>
+                    <h1><a href="../"><img src="/dashboard/images/xampp-newsletter-logo.png" alt="Logo Bitnami" width="180" /></a></h1>
                 </li>
                 <li class="toggle-topbar menu-icon">
                     <a href="#">
@@ -60,7 +60,8 @@ function carregaPagina()
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
-                    <li class=""><a href="/?p=home">Xampp</a></li>
+                    <li class=""><a href="/?p=home">Home</a></li>
+                    <li class=""><a href="/?p=projetos">Projetos</a></li>
                     <li class=""><a href="/?p=applications">Aplicações</a></li>
                     <li class=""><a href="/?p=faq">Perguntas Frequentes</a></li>
                     <li class=""><a href="/?p=howto">Como Fazer</a></li>

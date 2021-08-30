@@ -2,6 +2,9 @@
 
 function carregaPagina()
 {
+  setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+  date_default_timezone_set('America/Sao_Paulo');
+
   isset($_GET["p"]) ? $pagina = $_GET["p"] : $pagina = "projetos";
   if (file_exists($pagina . ".php")) {
     require_once $pagina . ".php";
@@ -9,6 +12,7 @@ function carregaPagina()
     require_once "404.php";
   }
 }
+
 ?>
 
 <!doctype html>
@@ -52,7 +56,7 @@ function carregaPagina()
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-          <h1><a href="https://localhost/"><img src="/dashboard/images/xampp-logo.svg" alt="Logo Bitinami" width="40" height="20" /> Home</a></h1>
+          <h1><a href="https://localhost/"><img src="/dashboard/images/xampp-newsletter-logo.png" alt="Logo Bitnami" width="180" /></a></h1>
         </li>
         <li class="toggle-topbar menu-icon">
           <a href="#">
@@ -64,12 +68,13 @@ function carregaPagina()
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li class=""><a href="?p=home">Xampp</a></li>
+          <li class=""><a href="?p=home">Home</a></li>
+          <li class=""><a href="?p=projetos">Projetos</a></li>
           <li class=""><a href="?p=applications">Aplicações</a></li>
           <li class=""><a href="?p=faq">Perguntas Frequentes</a></li>
           <li class=""><a href="?p=howto">Como Fazer</a></li>
-          <li class=""><a target="_blank" href="phpinfo.php">PHPInfo</a></li>
-          <li class=""><a target="_blank" href="/phpmyadmin/">phpMyAdmin</a></li>
+          <li class=""><a target="_blank" href="phpinfo.php"><img src="/dashboard/images/phpinfo.png" alt="Logo Bitnami" width="60" height="20" /></a></li>
+          <li class=""><a target="_blank" href="/phpmyadmin/"><img src="/dashboard/images/phpmyadmin.png" alt="Logo Bitnami" width="80" height="20" /></a></li>
         </ul>
       </section>
     </nav>

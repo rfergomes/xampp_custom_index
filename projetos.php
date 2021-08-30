@@ -1,5 +1,4 @@
 <?php
-date_default_timezone_set("America/Sao_Paulo");
 $dir = "./";
 $dirHandle = opendir($dir);
 $directoryArray = array();
@@ -7,11 +6,10 @@ $a = 0;
 $show_hidden = false;
 while ($directory = readdir($dirHandle)) {
     if ((strpos($directory, '.') !== 0 || !empty($show_hidden)) && $directory != "." && $directory != "..") {
-
         if (is_dir($directory)) {
             $directoryArray[$a] = array(
-                'name' => $directory,
-                'time' => date("F d Y H:i:s.", filemtime($directory))
+                'name' => strtoupper($directory),
+                'time' => date("F d Y H:i:s", filemtime($directory))
             );
             $a++;
         }
@@ -64,7 +62,7 @@ if (isset($_GET['phpInfo'])) {
     }
 
     .topnav input[type=text] {
-        padding: 6px;
+        padding: 5px;
         margin-top: 8px;
         font-size: 17px;
         border: none;
@@ -87,38 +85,39 @@ if (isset($_GET['phpInfo'])) {
         }
     }
 
-    
-
     a {
         font-style: normal;
         text-decoration: none;
     }
 
     .card {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
         display: inline-flex;
         background-color: var(--card-bg-color);
-        transition: 0.5s;
-        max-width: 31%;
+        transition: 0.3s;
+        max-width: 30%;
         flex: 0 0 30%;
         position: relative;
         width: 100%;
-        min-height: 1px;
-        margin: 1%;
+        min-height: 10px;
+        margin: 1.2%;
         color: var(--card-text-color);
+        border-radius: 10px;
     }
 
     .card:hover {
         background-color: var(--card-hover-color);
-        box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.6);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8);
         color: var(--card-hover-text-color);
+        max-width: 31%;
+
     }
 
     .container {
-        padding: 4px 16px 8px;
+        padding: 4px 12px 8px;
     }
-    
 </style>
+
 <div id="wrapper">
     <div class="hero">
         <div class="row">
@@ -127,14 +126,14 @@ if (isset($_GET['phpInfo'])) {
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="topnav col-4">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Pesquisar" id="search" name="search" autofocus="autofocus" onfocus="this.select()">
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="container">
         <div class="row">
             <div class="row-fluid">
                 <div id="replace">
