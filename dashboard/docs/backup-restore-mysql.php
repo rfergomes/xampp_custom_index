@@ -19,8 +19,8 @@
         <aside>
           <h3>Contents</h3>
           <ol class="sections">
-            <li><a href="#using_phpmyadmin">Using phpMyAdmin</a></li>
-            <li><a href="/dashboard/docs/backup-restore-mysql.html#using_command_line_tools">Using Command-Line Tools</a></li>
+            <li><a href="#_using_phpmyadmin">Using phpMyAdmin</a></li>
+            <li><a href="#_using_command_line_tools">Using Command-Line Tools</a></li>
           </ol>
         </aside>
         <h1>Backup and Restore MySQL/MariaDB Databases</h1>
