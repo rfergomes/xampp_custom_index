@@ -6,7 +6,7 @@ $a = 0;
 $show_hidden = false;
 while ($directory = readdir($dirHandle)) {
     if ((strpos($directory, '.') !== 0 || !empty($show_hidden)) && $directory != "." && $directory != "..") {
-        if (is_dir($directory)) {
+        if (is_dir($directory) && $directory != "dashboard") {
             $directoryArray[$a] = array(
                 'name' => strtoupper($directory),
                 'time' => date("F d Y H:i:s", filemtime($directory))
