@@ -137,7 +137,7 @@ if (isset($_GET['phpInfo'])) {
         <div class="row">
             <div class="row-fluid">
                 <div id="replace">
-                    <a href="{name}">
+                    <a href="{name}" target="_blank">
                         <div class="card">
                             <div class="container">
                                 <h4><b>{name}</b></h4>

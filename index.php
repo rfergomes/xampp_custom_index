@@ -26,7 +26,7 @@ function carregaPagina()
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title>Welcome to XAMPP</title>
+  <title>XAMPP Localhost</title>
 
   <meta name="description" content="XAMPP is an easy to install Apache distribution containing MariaDB, PHP and Perl." />
   <meta name="keywords" content="xampp, apache, php, perl, mariadb, open source distribution" />
