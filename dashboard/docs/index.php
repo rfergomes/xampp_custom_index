@@ -65,8 +65,9 @@ function carregaPagina()
                     <li class=""><a href="/?p=applications">Aplicações</a></li>
                     <li class=""><a href="/?p=faq">Perguntas Frequentes</a></li>
                     <li class=""><a href="/?p=howto">Como Fazer</a></li>
-                    <li class=""><a target="_blank" href="/phpinfo.php">PHPInfo</a></li>
-                    <li class=""><a target="_blank" href="/../phpmyadmin/">phpMyAdmin</a></li>
+                    <li class=""><a target="_blank" href="https://github.com/rfergomes/xampp_custom_index"><img src="/dashboard/images/github.png" alt="Logo Bitnami" width="45" height="20" /></a></li>
+          <li class=""><a target="_blank" href="/phpinfo.php"><img src="/dashboard/images/phpinfo.png" alt="Logo Bitnami" width="50" height="20" /></a></li>
+          <li class=""><a target="_blank" href="/phpmyadmin/"><img src="/dashboard/images/phpmyadmin.png" alt="Logo Bitnami" width="70" height="20" /></a></li>
                 </ul>
             </section>
         </nav>
