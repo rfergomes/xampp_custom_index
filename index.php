@@ -105,7 +105,7 @@ function carregaPagina()
             </ul>
           </div>
           <div class="large-4 columns">
-            <p class="text-right">Copyright (c) 2018, Apache Friends</p>
+            <p class="text-right">Copyright (c) <?= date("Y") ?>, Apache Friends by <a href="https://github.com/rfergomes" target="_blank">rfergomes</a></p>
           </div>
         </div>
       </div>
